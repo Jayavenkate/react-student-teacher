@@ -1,6 +1,6 @@
 import { Card } from "@mui/material";
 
-export function StudentDetails({ data, editdata, deletedata }) {
+export function TeacherDetails({data,editdata,deletedata}) {
   return (
     <div>
       <Card className="student-details" elevation={3}>

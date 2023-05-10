@@ -9,6 +9,9 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
+import { Home } from "./Home";
+import { TeacherDetails } from "./TeacherDetails";
+import { AddTeacher } from "./AddTeacher";
 
 export default function App() {
   const navigate = useNavigate();
@@ -19,26 +22,24 @@ export default function App() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Student & Teacher Management
           </Typography>
-          <Button color="inherit" onClick={()=>navigate("/")}>Home</Button>
+          <Button color="inherit" onClick={() => navigate("/")}>
+            Home
+          </Button>
 
-          <Button color="inherit" onClick={()=>navigate("/addstudent")}>Student</Button>
-          {/* <Button color="inherit"onClick={()=>navigate("/addstudent")}>Teacher</Button> */}
+          <Button color="inherit" onClick={() => navigate("/addstudent")}>
+            Student
+          </Button>
+          <Button color="inherit" onClick={() => navigate("/addteacher")}>
+            Teacher
+          </Button>
         </Toolbar>
       </AppBar>
       <Routes>
-        {/* <Route path="/studentdetails" element={<StudentDetails />} /> */}
         <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/addteacher" element={<AddTeacher />} />
+
         <Route path="/" element={<Home />} />
-      
       </Routes>
     </div>
   );
-}
-
-function Home(){
-  return(
-    <div>
-     <h2>Welcome to Home </h2> 
-    </div>
-  )
 }
