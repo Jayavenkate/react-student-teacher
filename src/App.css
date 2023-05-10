@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+}
+.student-details{
+  
+  width: 300px;
+  margin-left: 40px;
+  padding-left:20px ;
+}
+
+.student{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.add-student{
+margin-top: 30px;
+/* max-width:500px ; */
+/* margin-bottom: 50px; */
+}
+.btn{
+width: 400px;
+}
+.heading{
+  text-align: center;
+  
+}
+.data-con{
+  display: flex;
+  flex-direction: row;
+}
